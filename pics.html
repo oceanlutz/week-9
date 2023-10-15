@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--adding link to bootstrap css for importing the premade CSS-->
+</head>
+<body class="container-fluid" style="background-color: #faebeb;">
+    
+    <!--
+        first comes the navbar, using the nav element and classes from Bootstrap
+    -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color: #f5d6d6;">
+        <!--
+            above classes create navbar that sticks to top, is dark themed, and 
+            collapses responsively at medium breakpoint
+        -->
+        
+        <!--
+            button element next that appears responsively, and shows navbar
+            options at lower resolutions along with ARIA accessibility descriptors
+        -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>        
+        </button>
+        
+        <span class="navbar-brand mb-0 h1 d-inline-block d-md-none" href="home.html">
+            <img src="assets/fishies/koi-fish.svg" width="30" height="30" 
+                alt="orange and white koi fish logo">fishies!!!1!
+        </span>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!--creating unordered list to display in navbar-->
+            <ul class="navbar-nav"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pics.html">Pics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="survey.html">Survey</a>
+                </li>
+            </ul>
+        </div>
+        
+        <span class="navbar-brand mb-0 h1 d-md-inline-block d-none" href="home.html">
+            <img src="assets/fishies/koi-fish.svg" width="30" height="30" 
+                alt="orange and white koi fish logo">fishies!!!1!
+        </span>
+    </nav>
+
+    <!--
+        below i use the grid system to organize cards into rows and columns,
+        i wanted before the medium breakpoint to have 2 cards per row, and 
+        when smaller i wanted them to stack
+    -->
+
+    <!--
+        i added several pics in /assets to pull for the cards, and added wiki links
+    -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3" style="background-color: #f5d6d6;">
+                <img class="card-img-top" src="assets/fishies/coral-reef.jpg" alt="coral reef in shallow water with several small fish">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Here are some sea critters that I find interesting!
+                    </h5>
+                    <p class="card-text">
+                        Below you can sea and read brief descriptions of sea creatures
+                        that I really find interesting. You can also click this link below or the survey link 
+                        in the navbar to be taken to a small survey that I'm throwing in <s>to meet the requirements 
+                        of this assignment.</s>
+                    </p>
+                    <a href="survey.html" class="btn btn-dark">
+                        Let's Take a Survey!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-3" style="background-color: #f5d6d6;">
+                <img class="card-img-top" src="assets/fishies/frilled-shark.png" alt="frilled shark in open ocean">
+                <div class="card-body">
+                    <h5 class="card-title">Frilled Sharks!</h5>
+                    <p class="card-text">The frilled shark (Chlamydoselachus anguineus) is regarded by many
+                        as a living fossil, due to the several features it shares with the extinct subclass of 
+                        cartilaginous fish (a group containing now sharks, rays, skates, sawfish etc.) that are 
+                        no longer found in any of these other descendents today. These features include long jaws 
+                        with trident-shaped, multi-cusp teeth; amphistyly, the direct articulation of the jaws to 
+                        the cranium, at a point behind the eyes; and a quasi-cartilaginous notochord (a proto-
+                        spinal-column) composed of indistinct vertebrae. It gets its common name from the frilled 
+                        appearance of the 6 gill slits it has on each side (that being yet another trait not 
+                        commonly shared with other sharks today). You can read more about them here on Wikipedia, 
+                        the place I happened to have taken most of this infomation from anyways.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Frilled_shark" class="btn btn-dark">
+                        More info Here (Wiki)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">        
+            <div class="card mb-3" style="background-color: #f5d6d6;">
+                <img class="card-img-top" src="assets/fishies/mantis-shrimp.jpg" alt="multiple red koi fish in a pond">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Mantis Shrimps!
+                    </h5>
+                    <p class="card-text">
+                        Mantis Shrimps are marine crustaceans with a carnivorous diet that 
+                        can range generally between 10-15cm long during adulthood. The mantis shrimp is a 
+                        pugilist at heart, with its claws being the evolutionary pinnacle of close-ranged claw-to-claw 
+                        combat. When punching unlucky sea creatures (and ill-fated humans that choose their own demise) 
+                        they can accelerate these iron fists to 102,000 m/s<sup>2</sup> (10,400 g) and speeds of 23 m/s. 
+                        These strikes cause water cavitation (literally turning the water it punches into vapor) and the 
+                        resulting shock wave is enough on its own without the physical strike to incapacitate most prey. 
+                        They are also believed to have the most complex eyesight in the animal kingdom. Their eyes actually 
+                        function better than any manmade optical technology in terms of performing uniformly over the entire 
+                        visual spectrum, and can be the inspiration for future technology to which current Blu-ray technology 
+                        pales in comparison. I also have a sick tattoo of one.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Mantis_shrimp" class="btn btn-dark">
+                        More info Here (Wiki)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-3" style="background-color: #f5d6d6;">
+                <img class="card-img-top" src="assets/fishies/nautilus.jpg" alt="multiple red koi fish in a pond">
+                <div class="card-body">
+                    <h5 class="card-title">Cephalopods!</h5>
+                    <p class="card-text">This is the last for now before I get too carried away, but here I decided to 
+                        just group the entire class of Cephalopoda. This includes creatures such as squids, octopuses, 
+                        cuttlefish, and the nautilus pictured above. They are considered the most intelligent invertibrates 
+                        and have both large brains and well-developed senses. Their nervous systems are also the most complex 
+                        of all invertibrates. Cephalopods for this reason are notoriously difficult to keep in captivity, 
+                        and have been known to escape aquarium enclosures and journey to other enclosures to feed on crabs 
+                        before returning to their little glass prison. Most also contain skin components that make it possible 
+                        to interact with light. Along with using these components for changing color for camouflage, they can 
+                        also create bioluminescence or use other colors or patterns to communicate. Some species, like the 
+                        sand-dwelling octopus, use the flexibility of their own bodies along with the ability to change colors 
+                        to mimic other creatures (the sand-dwelling octopus in particular mimicking both the colors and the 
+                        swim movements of a particular sand-dwelling flounder). Cephalopods are basically underwater aliens.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Cephalopod" class="btn btn-dark">
+                        More info Here (Wiki)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        i didn't really comment in the above rows and columns because i'm just repeating
+        what i did on the home page, and i also enjoy the look of the code and didn't 
+        wanna mess it up
+    -->
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+</body>
+</html>
